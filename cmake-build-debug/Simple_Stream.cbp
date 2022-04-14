@@ -84,7 +84,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/Simple Stream/client.c">
+			<Option target="Simple_Stream"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/Simple Stream/main.cpp">
+			<Option target="Simple_Stream"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/Simple Stream/server.c">
 			<Option target="Simple_Stream"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/Simple Stream/CMakeLists.txt">

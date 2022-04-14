@@ -3,4 +3,4 @@ project(Simple_Stream)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Simple_Stream main.cpp)
+add_executable(Simple_Stream main.cpp server.c client.c)
