@@ -53,8 +53,9 @@ void *get_in_addr(struct sockaddr *sa)
 
 void *send_hello(void *arg) {
     int *s = (int *) arg;
-    if (send(*s, "Hello, world!", 13, 0) == -1)
+    if (send(*s, "Hello, world!", 13, 0) == -1) {
         perror("send");
+    }
     close(*s);
     return 0;
 }
@@ -126,6 +127,12 @@ int main(void)
 
     printf("server: waiting for connections...\n");
 
+    /* initializing array of threads with size of 10(the max of concurrency clients).
+     * also init unsigned long thread_num to be the index of each thread
+     * that will serve the current connection with the client*/
+    pthread_t client_h[BACKLOG];
+    unsigned long thread_num = 0;
+
     while(1) {  // main accept() loop
         sin_size = sizeof their_addr;
         new_fd = accept(sockfd, (struct sockaddr *)&their_addr, &sin_size);
@@ -139,9 +146,13 @@ int main(void)
                   s, sizeof s);
         printf("server: got connection from %s\n", s);
 
-
-        pthread_t kabilio;
-        pthread_create(&kabilio, NULL, send_hello, &new_fd);
+        /* in case we had more that 10 clients total(not at the same time) we can go point back to the previous threads
+         * by module the curr index with backlog.*/
+        thread_num %= BACKLOG;
+        /*create new executable thread to handle the connection with the client (to reply hello world...)*/
+        pthread_create(&client_h[thread_num], NULL, send_hello, &new_fd);
+        /* increasing the counter for next pthread in the queue*/
+        thread_num++;
     }
 
     return 0;
