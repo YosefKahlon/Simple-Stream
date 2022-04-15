@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Simple_Stream.dir/client.c.o"
   "CMakeFiles/Simple_Stream.dir/main.cpp.o"
+  "CMakeFiles/Simple_Stream.dir/original_server.c.o"
   "CMakeFiles/Simple_Stream.dir/server.c.o"
   "Simple_Stream"
   "Simple_Stream.pdb"

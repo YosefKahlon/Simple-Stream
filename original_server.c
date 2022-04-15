@@ -1,8 +1,4 @@
 //
-// Created by barak on 15/04/2022.
-//
-
-//
 // Created by 97252 on 4/14/2022.
 //
 
@@ -22,7 +18,6 @@
 #include <arpa/inet.h>
 #include <sys/wait.h>
 #include <signal.h>
-#include <pthread.h>
 
 #define PORT "3490"  // the port users will be connecting to
 
@@ -49,14 +44,6 @@ void *get_in_addr(struct sockaddr *sa)
     }
 
     return &(((struct sockaddr_in6*)sa)->sin6_addr);
-}
-
-void *send_hello(void *arg) {
-    int *s = (int *) arg;
-    if (send(*s, "Hello, world!", 13, 0) == -1)
-        perror("send");
-    close(*s);
-    return 0;
 }
 
 int main(void)
@@ -139,9 +126,14 @@ int main(void)
                   s, sizeof s);
         printf("server: got connection from %s\n", s);
 
-
-        pthread_t kabilio;
-        pthread_create(&kabilio, NULL, send_hello, &new_fd);
+        if (!fork()) { // this is the child process
+            close(sockfd); // child doesn't need the listener
+            if (send(new_fd, "Hello, world!", 13, 0) == -1)
+                perror("send");
+            close(new_fd);
+            exit(0);
+        }
+        close(new_fd);  // parent doesn't need this
     }
 
     return 0;

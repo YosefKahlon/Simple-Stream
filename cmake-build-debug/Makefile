@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/97252/Documents/GitHub/Simple Stream"
+CMAKE_SOURCE_DIR = /mnt/c/Users/barak/Documents/GitHub/Simple-Stream
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/97252/Documents/GitHub/Simple Stream/cmake-build-debug"
+CMAKE_BINARY_DIR = /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/97252/Documents/GitHub/Simple Stream/cmake-build-debug/CMakeFiles" "/mnt/c/Users/97252/Documents/GitHub/Simple Stream/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/cmake-build-debug/CMakeFiles /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/97252/Documents/GitHub/Simple Stream/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Simple_Stream.dir/build.make CMakeFiles/Simple_Stream.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+original_server.o: original_server.c.o
+
+.PHONY : original_server.o
+
+# target to build an object file
+original_server.c.o:
+	$(MAKE) -f CMakeFiles/Simple_Stream.dir/build.make CMakeFiles/Simple_Stream.dir/original_server.c.o
+.PHONY : original_server.c.o
+
+original_server.i: original_server.c.i
+
+.PHONY : original_server.i
+
+# target to preprocess a source file
+original_server.c.i:
+	$(MAKE) -f CMakeFiles/Simple_Stream.dir/build.make CMakeFiles/Simple_Stream.dir/original_server.c.i
+.PHONY : original_server.c.i
+
+original_server.s: original_server.c.s
+
+.PHONY : original_server.s
+
+# target to generate assembly for a file
+original_server.c.s:
+	$(MAKE) -f CMakeFiles/Simple_Stream.dir/build.make CMakeFiles/Simple_Stream.dir/original_server.c.s
+.PHONY : original_server.c.s
+
 server.o: server.c.o
 
 .PHONY : server.o
@@ -219,6 +246,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... original_server.o"
+	@echo "... original_server.i"
+	@echo "... original_server.s"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/97252/Documents/GitHub/Simple Stream"
+CMAKE_SOURCE_DIR = /mnt/c/Users/barak/Documents/GitHub/Simple-Stream
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/97252/Documents/GitHub/Simple Stream/cmake-build-debug"
+CMAKE_BINARY_DIR = /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Simple_Stream.dir/depend.make
@@ -59,58 +59,73 @@ include CMakeFiles/Simple_Stream.dir/flags.make
 
 CMakeFiles/Simple_Stream.dir/main.cpp.o: CMakeFiles/Simple_Stream.dir/flags.make
 CMakeFiles/Simple_Stream.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/97252/Documents/GitHub/Simple Stream/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Simple_Stream.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Simple_Stream.dir/main.cpp.o -c "/mnt/c/Users/97252/Documents/GitHub/Simple Stream/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/barak/Documents/GitHub/Simple-Stream/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Simple_Stream.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Simple_Stream.dir/main.cpp.o -c /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/main.cpp
 
 CMakeFiles/Simple_Stream.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Simple_Stream.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/97252/Documents/GitHub/Simple Stream/main.cpp" > CMakeFiles/Simple_Stream.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/main.cpp > CMakeFiles/Simple_Stream.dir/main.cpp.i
 
 CMakeFiles/Simple_Stream.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Simple_Stream.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/97252/Documents/GitHub/Simple Stream/main.cpp" -o CMakeFiles/Simple_Stream.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/main.cpp -o CMakeFiles/Simple_Stream.dir/main.cpp.s
 
-CMakeFiles/Simple_Stream.dir/server.c.o: CMakeFiles/Simple_Stream.dir/flags.make
-CMakeFiles/Simple_Stream.dir/server.c.o: ../server.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/97252/Documents/GitHub/Simple Stream/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Simple_Stream.dir/server.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Simple_Stream.dir/server.c.o   -c "/mnt/c/Users/97252/Documents/GitHub/Simple Stream/server.c"
+CMakeFiles/Simple_Stream.dir/original_server.c.o: CMakeFiles/Simple_Stream.dir/flags.make
+CMakeFiles/Simple_Stream.dir/original_server.c.o: ../original_server.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/barak/Documents/GitHub/Simple-Stream/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Simple_Stream.dir/original_server.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Simple_Stream.dir/original_server.c.o   -c /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/original_server.c
 
-CMakeFiles/Simple_Stream.dir/server.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Simple_Stream.dir/server.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/mnt/c/Users/97252/Documents/GitHub/Simple Stream/server.c" > CMakeFiles/Simple_Stream.dir/server.c.i
+CMakeFiles/Simple_Stream.dir/original_server.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Simple_Stream.dir/original_server.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/original_server.c > CMakeFiles/Simple_Stream.dir/original_server.c.i
 
-CMakeFiles/Simple_Stream.dir/server.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Simple_Stream.dir/server.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/mnt/c/Users/97252/Documents/GitHub/Simple Stream/server.c" -o CMakeFiles/Simple_Stream.dir/server.c.s
+CMakeFiles/Simple_Stream.dir/original_server.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Simple_Stream.dir/original_server.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/original_server.c -o CMakeFiles/Simple_Stream.dir/original_server.c.s
 
 CMakeFiles/Simple_Stream.dir/client.c.o: CMakeFiles/Simple_Stream.dir/flags.make
 CMakeFiles/Simple_Stream.dir/client.c.o: ../client.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/97252/Documents/GitHub/Simple Stream/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Simple_Stream.dir/client.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Simple_Stream.dir/client.c.o   -c "/mnt/c/Users/97252/Documents/GitHub/Simple Stream/client.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/barak/Documents/GitHub/Simple-Stream/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Simple_Stream.dir/client.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Simple_Stream.dir/client.c.o   -c /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/client.c
 
 CMakeFiles/Simple_Stream.dir/client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Simple_Stream.dir/client.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/mnt/c/Users/97252/Documents/GitHub/Simple Stream/client.c" > CMakeFiles/Simple_Stream.dir/client.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/client.c > CMakeFiles/Simple_Stream.dir/client.c.i
 
 CMakeFiles/Simple_Stream.dir/client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Simple_Stream.dir/client.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/mnt/c/Users/97252/Documents/GitHub/Simple Stream/client.c" -o CMakeFiles/Simple_Stream.dir/client.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/client.c -o CMakeFiles/Simple_Stream.dir/client.c.s
+
+CMakeFiles/Simple_Stream.dir/server.c.o: CMakeFiles/Simple_Stream.dir/flags.make
+CMakeFiles/Simple_Stream.dir/server.c.o: ../server.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/barak/Documents/GitHub/Simple-Stream/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Simple_Stream.dir/server.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Simple_Stream.dir/server.c.o   -c /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/server.c
+
+CMakeFiles/Simple_Stream.dir/server.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Simple_Stream.dir/server.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/server.c > CMakeFiles/Simple_Stream.dir/server.c.i
+
+CMakeFiles/Simple_Stream.dir/server.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Simple_Stream.dir/server.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/server.c -o CMakeFiles/Simple_Stream.dir/server.c.s
 
 # Object files for target Simple_Stream
 Simple_Stream_OBJECTS = \
 "CMakeFiles/Simple_Stream.dir/main.cpp.o" \
-"CMakeFiles/Simple_Stream.dir/server.c.o" \
-"CMakeFiles/Simple_Stream.dir/client.c.o"
+"CMakeFiles/Simple_Stream.dir/original_server.c.o" \
+"CMakeFiles/Simple_Stream.dir/client.c.o" \
+"CMakeFiles/Simple_Stream.dir/server.c.o"
 
 # External object files for target Simple_Stream
 Simple_Stream_EXTERNAL_OBJECTS =
 
 Simple_Stream: CMakeFiles/Simple_Stream.dir/main.cpp.o
-Simple_Stream: CMakeFiles/Simple_Stream.dir/server.c.o
+Simple_Stream: CMakeFiles/Simple_Stream.dir/original_server.c.o
 Simple_Stream: CMakeFiles/Simple_Stream.dir/client.c.o
+Simple_Stream: CMakeFiles/Simple_Stream.dir/server.c.o
 Simple_Stream: CMakeFiles/Simple_Stream.dir/build.make
 Simple_Stream: CMakeFiles/Simple_Stream.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/97252/Documents/GitHub/Simple Stream/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Simple_Stream"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/barak/Documents/GitHub/Simple-Stream/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Simple_Stream"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Simple_Stream.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +138,6 @@ CMakeFiles/Simple_Stream.dir/clean:
 .PHONY : CMakeFiles/Simple_Stream.dir/clean
 
 CMakeFiles/Simple_Stream.dir/depend:
-	cd "/mnt/c/Users/97252/Documents/GitHub/Simple Stream/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/97252/Documents/GitHub/Simple Stream" "/mnt/c/Users/97252/Documents/GitHub/Simple Stream" "/mnt/c/Users/97252/Documents/GitHub/Simple Stream/cmake-build-debug" "/mnt/c/Users/97252/Documents/GitHub/Simple Stream/cmake-build-debug" "/mnt/c/Users/97252/Documents/GitHub/Simple Stream/cmake-build-debug/CMakeFiles/Simple_Stream.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/barak/Documents/GitHub/Simple-Stream /mnt/c/Users/barak/Documents/GitHub/Simple-Stream /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/cmake-build-debug /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/cmake-build-debug /mnt/c/Users/barak/Documents/GitHub/Simple-Stream/cmake-build-debug/CMakeFiles/Simple_Stream.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Simple_Stream.dir/depend
 
