@@ -11,4 +11,4 @@ client: client.c
 	gcc client.c -o client
 
 clean:
-	rm -f *.o server client
+	rm -f *.o server original_server client
